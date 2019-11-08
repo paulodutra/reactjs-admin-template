@@ -22,10 +22,10 @@ export default function App() {
         {/*<Route exact path="/">
           <Home />
         </Route>*/}
-        <Route exact path="/" name="Home" render={props => <AppLayout {...props} />} />
         <Route exact path="/login" name="Login" render={props => <Login {...props} /> }/>
         <Route exact path="/forgot" name="Forgot" render={props =>  <Forgot {...props} />} />
         <Route exact path="/register" name="Register" render={ props => <Register {...props} />} />
+        <Route path="/" name="Home" render={props => <AppLayout {...props} />} />
         <Route path="*" name="NotFound" render={props =>   <NotFound {...props} />} />
       </Switch>
     </Router>
