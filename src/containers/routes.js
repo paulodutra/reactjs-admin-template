@@ -1,12 +1,12 @@
-import Component1 from './../components/Component1';
+import Cards from '../components/inside/Cards';
 
 const LoadingRoutes = () => (
     [
         {
-            path :"/1",
-            name: "Home",
+            path :"/cards",
+            name: "Cards",
             exact : true,
-            template : Component1 
+            template : Cards 
         }
 
     ]
