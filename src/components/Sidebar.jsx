@@ -21,7 +21,6 @@ export default function Sidebar(props) {
                 <h2>Admin</h2>
             </div>
             <div className="list-group">
-            <a href="/" className="list-group-item">Home</a>
             { Templates.map((template, index) => (
                 <a href={template.path} className="list-group-item" key={index} >{template.name}</a>
             ))}
